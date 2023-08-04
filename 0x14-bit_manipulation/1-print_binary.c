@@ -15,16 +15,16 @@ void print_binary(unsigned long int n)
 	{
 		current = n >> i;
 
-		if (current & 1)
+		if ((current & 1) != 0)
 		{
 			putchar('1');
 			total++;
 		}
-		else if (total)
+		else if (total != 0)
 			putchar('0');
 
 		i--;
 	}
-	if (!total)
+	if (total == 0)
 		putchar('0');
 }
