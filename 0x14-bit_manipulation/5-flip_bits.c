@@ -4,18 +4,18 @@
 /**
  * flip_bits - counts the number of bits to flip
  * @n: original number
- * @m: number to change to 
+ * @m: number to change to
  *
  * Return: number of bits to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int i = 0;
-        int num = 0;
+	int num = 0;
 	unsigned long int current;
 	unsigned long int xor = n ^ m;
 
 	int i = 63
+
 	while (i >= 0)
 	{
 		unsigned long int current = xor >> i;
