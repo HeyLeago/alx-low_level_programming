@@ -11,7 +11,6 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int num = 0;
-	unsigned long int current;
 	unsigned long int xor = n ^ m;
 
 	int i = 63;
@@ -27,4 +26,3 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	return (num);
 }
-
